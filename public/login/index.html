@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-color: rgba(10, 0, 35, 0.978) !important;
+            font-family: Gudea;
+        
+        }
+        #login-container{
+            background-color: rgba(10, 0, 35, 0.952);
+            border-color: rgba(245, 245, 245, 0.153) ;
+            border-style: solid;
+            border-width: 0.5px;
+            
+        }
+        label{
+            color: whitesmoke;
+        }
+        header {
+            background-color: rgba(28, 28, 28, 0.168) !important;
+            box-shadow: 0px 8px 16px 0px rgba(10, 0, 35, 0.75);
+            /* White drop-down shadow */
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <header class="bg-blue-500 text-white py-2">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold px-4 py-2 rounded-lg transition-colors">K I : P A A :</a>
+            <ul class="flex space-x-4 font-bold">
+                <li>
+                    <a href="\public\hakuchaChat\index.html"
+                        class="hover:bg-indigo-900 text-white px-4 py-4 rounded-lg transition-colors">
+                        Hakucha Chat
+                    </a>
+                </li>
+
+                <li><a href="\public\index.html"
+                        class="hover:bg-indigo-900 text-white px-4 py-4 rounded-lg transition-colors">Ki:Paa:
+                        Generator</a></li>
+                <li><a href="#" class="hover:bg-indigo-900 text-white px-4 py-4 rounded-lg transition-colors">Text to
+                        Speech</a></li>
+                <li><a href="\public\login\index.html" class="hover:bg-indigo-900 text-white px-4 py-4 rounded-lg transition-colors">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container mx-auto h-screen flex justify-center items-center">
+        <div class="bg-white p-8 rounded-lg shadow-md w-96" id="login-container">
+            <h1 class="text-2xl font-bold mb-4" style="color: whitesmoke;">Login</h1>
+            <form action="/login" method="POST">
+                <div class="mb-4">
+                    <label for="username" class="block text-sm font-medium text-gray-700" style="color: whitesmoke;">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username"
+                           class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500">
+                </div>
+                <div class="mb-4">
+                    <label for="password" class="block text-sm font-medium text-gray-700" style="color: whitesmoke;">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password"
+                           class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500">
+                </div>
+                <div class="flex items-center mb-4">
+                    <input type="checkbox" id="rememberMe" name="rememberMe" class="mr-2">
+                    <label for="rememberMe" class="text-sm text-gray-700" style="color: whitesmoke;">Remember me</label>
+                </div>
+                <div class="flex justify-between items-center">
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        Login
+                    </button>
+                    <a href="#" class="text-sm text-gray-500 hover:text-blue-500">Forgot Password?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
