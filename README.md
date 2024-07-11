@@ -1,6 +1,6 @@
 # Ki:Paa: AI Image Generator
 This project is a simple web application that generates images based on user input using the OpenAI API.
-# Website: https://ki-paa-image-generator-git-main-sujanmhrjn1301s-projects.vercel.app/
+## Website: https://ki-paa-image-generator-git-main-sujanmhrjn1301s-projects.vercel.app/
 ## Getting Started
 To get started with this project, follow these steps:
 ### 1. Clone the repository to your local machine:
